@@ -1,0 +1,17 @@
+@media (min-width: 500px) {
+  .footer-main-container {
+     height: 7vh;  
+  }
+  .footer-sub-container {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-main-container {
+    height: 15vh;  
+ }
+ .footer-sub-container {
+   flex-direction: column;
+}
+}
