@@ -43,10 +43,32 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <img
+  <div style="margin-bottom: 7vh; height: 20vh" class="fixed-bottom w-100">
+    <div style="width: 80%; display: flex; justify-content: center">
+      <div class="progress" style="width: 100%">
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated"
+          role="progressbar"
+          aria-valuenow="135000"
+          aria-valuemin="0"
+          aria-valuemax="300000"
+          [style.width]="progress"
+        >
+          {{ progress }}
+        </div>
+      </div>
+    </div>
+    <div style="display: flex">
+      <div style="display: flex">
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <!-- <img
     class="fundraiser-bar"
     style="position: absolute; margin-left: 75em; margin-top: -15em"
     border="0"
     src="https://www.sumac.com/fundraising-thermometer?goal=300000&current=135000&color=92d14f&currency=dollar&size=medium"
-  />
+  /> -->
 </div>
