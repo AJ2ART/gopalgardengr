@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  totalValue = 300000;
-  valueReceived = 135000;
+  totalValue = 500000;
+  valueReceived = 146000;
+  numOfDonors = 10;
   progress = '0%';
 
   constructor() { }
