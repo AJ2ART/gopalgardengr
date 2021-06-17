@@ -1,8 +1,8 @@
 @media (min-width: 500px) {
-      .navbar {
-        padding: 20px;
-        background-color: #fff !important;
-      }
+  .navbar {
+    padding: 20px;
+    background-color: #fff !important;
+  }
 }
 
 @media (max-width: 500px) {
@@ -12,15 +12,66 @@
 }
 
 .navbar .getstarted {
-    background: #d9232d;
-    padding: 8px 25px;
-    margin-left: 30px;
-    border-radius: 4px;
-    font-weight: 400;
-    color: #fff;
+  background: #d9232d;
+  padding: 8px 25px;
+  margin-left: 30px;
+  border-radius: 4px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.navbar .getstarted:hover {
+  color: #fff;
+  background: #e1444d;
+}
+
+// navbar
+.navbar {
+  .navbar-nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    .nav-item {
+      .nav-link {
+        padding: .5rem .6rem;
+        text-transform: capitalize;
+
+        &:hover {
+          color: #d9232d;
+        }
+      }
+
+      &.active {
+        .nav-link {
+          color: #d9232d;
+        }
+      }
+
+      &.dropdown {
+        .dropdown-item {
+          color: rgba(0, 0, 0, .5);
+          font-size: 15px;
+          font-weight: 500px;
+          text-transform: capitalize;
+
+          &:active {
+            color: #d9232d;
+            background: none;
+          }
+
+          &:hover {
+            color: #d9232d;
+          }
+
+        }
+      }
+    }
   }
-  
-  .navbar .getstarted:hover {
-    color: #fff;
-    background: #e1444d;
+
+  .donation {
+    .btn {
+      font-size: 15px;
+    }
   }
+}
