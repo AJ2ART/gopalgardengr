@@ -19,6 +19,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { ProjectsComponent } from './components/projects/projects.component';
 import { GopalGardenComponent } from './components/projects/gopal-garden/gopal-garden.component';
 import { KrishnaHouseComponent } from './components/projects/krishna-house/krishna-house.component';
+import { DummyComponent } from './components/dummy/dummy.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { KrishnaHouseComponent } from './components/projects/krishna-house/krish
     ContactUsComponent,
     ProjectsComponent,
     GopalGardenComponent,
-    KrishnaHouseComponent
+    KrishnaHouseComponent,
+    DummyComponent
   ],
   imports: [
     BrowserModule,
