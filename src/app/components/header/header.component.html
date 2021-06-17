@@ -8,13 +8,16 @@
     bg-light
   "
 >
+  <!-- <a class="navbar-brand" href="#">
+    <img src="assets/images/igr-logo.png" width="30" height="30" class="d-inline-block align-top" alt="" />
+  </a> -->
   <a class="navbar-brand" href="#">
     <img
-      src="assets/images/iskconLogo.jpg"
+      src="assets/images/igr-logo.png"
       width="30"
       height="30"
-      class="d-inline-block align-top"
-      alt=""
+      class="img-responsive"
+      alt="Responsive image"
     />
   </a>
   <button
@@ -34,29 +37,81 @@
     id="navbarSupportedContent"
   >
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"
-          >Home <span class="sr-only">(current)</span></a
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home" routerLinkActive="active"
+          >home</a
         >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" routerLink="/festivals" routerLinkActive="active"
+          >festivals</a
+        >
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          routerLink="/projects"
+          routerLinkActive="active"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          projects
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li>
+            <a
+              class="dropdown-item"
+              routerLink="/gopal-garden"
+              routerLinkActive="active"
+              >gopal garden</a
+            >
+          </li>
+          <li>
+            <a
+              class="dropdown-item"
+              routerLink="/krishna-house"
+              routerLinkActive="active"
+              >krishna house</a
+            >
+          </li>
+        </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
+        <a class="nav-link" routerLink="/about" routerLinkActive="active"
+          >about us</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/testimonials" routerLinkActive="active"
+          >testimonials</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/gallery" routerLinkActive="active"
+          >gallery</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact" routerLinkActive="active"
+          >contact Us</a
+        >
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Gopal Garden</a>
       </li>
     </ul>
   </div>
+
   <form class="donation form-inline">
-    <button class="btn btn-danger">
+    <button class="btn btn-outline-danger rounded-pill">
       <a
-        style="text-decoration: none; color: white"
+        style="text-decoration: none"
         href="https://www.paypal.com/donate?hosted_button_id=5BY9TJAGLJ7VQ"
-        >Donation</a
-      >
+        >Donation<i class="fas fa-heart"></i
+      ></a>
     </button>
   </form>
 </nav>
