@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/iskcongr",
+    "public": "dist/iskcongr/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
